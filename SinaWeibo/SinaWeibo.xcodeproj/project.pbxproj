@@ -15,6 +15,7 @@
 		597905EA1E4C0C6500264DD2 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905E21E4C0C6500264DD2 /* WBMessageViewController.swift */; };
 		597905EB1E4C0C6500264DD2 /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905E41E4C0C6500264DD2 /* WBProfileViewController.swift */; };
 		597905ED1E4C0C8500264DD2 /* WBTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905EC1E4C0C8500264DD2 /* WBTestViewController.swift */; };
+		597905F01E4C18C300264DD2 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905EF1E4C18C300264DD2 /* UIBarButtonItem+Extension.swift */; };
 		59F387641E49C68C00CDF104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387631E49C68C00CDF104 /* AppDelegate.swift */; };
 		59F3876B1E49C68C00CDF104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F3876A1E49C68C00CDF104 /* Assets.xcassets */; };
 		59F3876E1E49C68C00CDF104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F3876C1E49C68C00CDF104 /* LaunchScreen.storyboard */; };
@@ -48,6 +49,7 @@
 		597905E21E4C0C6500264DD2 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
 		597905E41E4C0C6500264DD2 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
 		597905EC1E4C0C8500264DD2 /* WBTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTestViewController.swift; sourceTree = "<group>"; };
+		597905EF1E4C18C300264DD2 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		59F387601E49C68C00CDF104 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F387631E49C68C00CDF104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F3876A1E49C68C00CDF104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		597905EE1E4C18A000264DD2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				597905EF1E4C18C300264DD2 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		59F387571E49C68C00CDF104 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		59F387921E49CB5C00CDF104 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				597905EE1E4C18A000264DD2 /* Extension */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -378,6 +389,7 @@
 			files = (
 				597905E71E4C0C6500264DD2 /* WBBaseViewController.swift in Sources */,
 				597905ED1E4C0C8500264DD2 /* WBTestViewController.swift in Sources */,
+				597905F01E4C18C300264DD2 /* UIBarButtonItem+Extension.swift in Sources */,
 				597905EB1E4C0C6500264DD2 /* WBProfileViewController.swift in Sources */,
 				597905EA1E4C0C6500264DD2 /* WBMessageViewController.swift in Sources */,
 				597905E51E4C0C6500264DD2 /* WBDiscoverViewController.swift in Sources */,
