@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		597905E51E4C0C6500264DD2 /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905D91E4C0C6500264DD2 /* WBDiscoverViewController.swift */; };
+		597905E61E4C0C6500264DD2 /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905DB1E4C0C6500264DD2 /* WBHomeViewController.swift */; };
+		597905E71E4C0C6500264DD2 /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */; };
+		597905E81E4C0C6500264DD2 /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905DF1E4C0C6500264DD2 /* WBMainViewController.swift */; };
+		597905E91E4C0C6500264DD2 /* WBNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905E01E4C0C6500264DD2 /* WBNavigationViewController.swift */; };
+		597905EA1E4C0C6500264DD2 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905E21E4C0C6500264DD2 /* WBMessageViewController.swift */; };
+		597905EB1E4C0C6500264DD2 /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905E41E4C0C6500264DD2 /* WBProfileViewController.swift */; };
+		597905ED1E4C0C8500264DD2 /* WBTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905EC1E4C0C8500264DD2 /* WBTestViewController.swift */; };
 		59F387641E49C68C00CDF104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387631E49C68C00CDF104 /* AppDelegate.swift */; };
 		59F3876B1E49C68C00CDF104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F3876A1E49C68C00CDF104 /* Assets.xcassets */; };
 		59F3876E1E49C68C00CDF104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F3876C1E49C68C00CDF104 /* LaunchScreen.storyboard */; };
 		59F387791E49C68D00CDF104 /* SinaWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387781E49C68D00CDF104 /* SinaWeiboTests.swift */; };
 		59F387841E49C68D00CDF104 /* SinaWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387831E49C68D00CDF104 /* SinaWeiboUITests.swift */; };
-		59F3879F1E49CC0C00CDF104 /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */; };
-		59F387A11E49CC4A00CDF104 /* WBNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */; };
-		59F387A31E49CC6C00CDF104 /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */; };
-		59F387A51E49CCA300CDF104 /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */; };
-		59F387A71E49CCB000CDF104 /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */; };
-		59F387A91E49CCBE00CDF104 /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */; };
-		59F387AB1E49CCCF00CDF104 /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		597905D91E4C0C6500264DD2 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
+		597905DB1E4C0C6500264DD2 /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
+		597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
+		597905DF1E4C0C6500264DD2 /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
+		597905E01E4C0C6500264DD2 /* WBNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationViewController.swift; sourceTree = "<group>"; };
+		597905E21E4C0C6500264DD2 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
+		597905E41E4C0C6500264DD2 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		597905EC1E4C0C8500264DD2 /* WBTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTestViewController.swift; sourceTree = "<group>"; };
 		59F387601E49C68C00CDF104 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F387631E49C68C00CDF104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F3876A1E49C68C00CDF104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,13 +59,6 @@
 		59F3877F1E49C68D00CDF104 /* SinaWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F387831E49C68D00CDF104 /* SinaWeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaWeiboUITests.swift; sourceTree = "<group>"; };
 		59F387851E49C68D00CDF104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBMainViewController.swift; path = ../WBMainViewController.swift; sourceTree = "<group>"; };
-		59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBNavigationViewController.swift; path = ../WBNavigationViewController.swift; sourceTree = "<group>"; };
-		59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBBaseViewController.swift; path = ../WBBaseViewController.swift; sourceTree = "<group>"; };
-		59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBHomeViewController.swift; path = ../WBHomeViewController.swift; sourceTree = "<group>"; };
-		59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBMessageViewController.swift; path = ../WBMessageViewController.swift; sourceTree = "<group>"; };
-		59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBDiscoverViewController.swift; path = ../WBDiscoverViewController.swift; sourceTree = "<group>"; };
-		59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBProfileViewController.swift; path = ../WBProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,44 +86,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		597905D31E4C0BB500264DD2 /* Discover */ = {
+		597905D81E4C0C6500264DD2 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */,
+				597905D91E4C0C6500264DD2 /* WBDiscoverViewController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		597905D41E4C0BB500264DD2 /* Home */ = {
+		597905DA1E4C0C6500264DD2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */,
+				597905DB1E4C0C6500264DD2 /* WBHomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		597905D51E4C0BB500264DD2 /* Main */ = {
+		597905DC1E4C0C6500264DD2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */,
-				59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */,
-				59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */,
+				597905DD1E4C0C6500264DD2 /* test */,
+				597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */,
+				597905DF1E4C0C6500264DD2 /* WBMainViewController.swift */,
+				597905E01E4C0C6500264DD2 /* WBNavigationViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		597905D61E4C0BB500264DD2 /* Message */ = {
+		597905DD1E4C0C6500264DD2 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */,
+				597905EC1E4C0C8500264DD2 /* WBTestViewController.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		597905E11E4C0C6500264DD2 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				597905E21E4C0C6500264DD2 /* WBMessageViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
 		};
-		597905D71E4C0BB500264DD2 /* Profile */ = {
+		597905E31E4C0C6500264DD2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */,
+				597905E41E4C0C6500264DD2 /* WBProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -205,11 +216,11 @@
 		59F387951E49CB5C00CDF104 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				597905D51E4C0BB500264DD2 /* Main */,
-				597905D41E4C0BB500264DD2 /* Home */,
-				597905D61E4C0BB500264DD2 /* Message */,
-				597905D31E4C0BB500264DD2 /* Discover */,
-				597905D71E4C0BB500264DD2 /* Profile */,
+				597905DC1E4C0C6500264DD2 /* Main */,
+				597905DA1E4C0C6500264DD2 /* Home */,
+				597905E11E4C0C6500264DD2 /* Message */,
+				597905D81E4C0C6500264DD2 /* Discover */,
+				597905E31E4C0C6500264DD2 /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,14 +376,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59F387A31E49CC6C00CDF104 /* WBBaseViewController.swift in Sources */,
-				59F387AB1E49CCCF00CDF104 /* WBProfileViewController.swift in Sources */,
-				59F387A91E49CCBE00CDF104 /* WBDiscoverViewController.swift in Sources */,
-				59F3879F1E49CC0C00CDF104 /* WBMainViewController.swift in Sources */,
-				59F387A51E49CCA300CDF104 /* WBHomeViewController.swift in Sources */,
-				59F387A11E49CC4A00CDF104 /* WBNavigationViewController.swift in Sources */,
+				597905E71E4C0C6500264DD2 /* WBBaseViewController.swift in Sources */,
+				597905ED1E4C0C8500264DD2 /* WBTestViewController.swift in Sources */,
+				597905EB1E4C0C6500264DD2 /* WBProfileViewController.swift in Sources */,
+				597905EA1E4C0C6500264DD2 /* WBMessageViewController.swift in Sources */,
+				597905E51E4C0C6500264DD2 /* WBDiscoverViewController.swift in Sources */,
 				59F387641E49C68C00CDF104 /* AppDelegate.swift in Sources */,
-				59F387A71E49CCB000CDF104 /* WBMessageViewController.swift in Sources */,
+				597905E61E4C0C6500264DD2 /* WBHomeViewController.swift in Sources */,
+				597905E91E4C0C6500264DD2 /* WBNavigationViewController.swift in Sources */,
+				597905E81E4C0C6500264DD2 /* WBMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
