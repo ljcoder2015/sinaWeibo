@@ -50,13 +50,13 @@
 		59F3877F1E49C68D00CDF104 /* SinaWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F387831E49C68D00CDF104 /* SinaWeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaWeiboUITests.swift; sourceTree = "<group>"; };
 		59F387851E49C68D00CDF104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
-		59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationViewController.swift; sourceTree = "<group>"; };
-		59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
-		59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
-		59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
-		59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
-		59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBMainViewController.swift; path = ../WBMainViewController.swift; sourceTree = "<group>"; };
+		59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBNavigationViewController.swift; path = ../WBNavigationViewController.swift; sourceTree = "<group>"; };
+		59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBBaseViewController.swift; path = ../WBBaseViewController.swift; sourceTree = "<group>"; };
+		59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBHomeViewController.swift; path = ../WBHomeViewController.swift; sourceTree = "<group>"; };
+		59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBMessageViewController.swift; path = ../WBMessageViewController.swift; sourceTree = "<group>"; };
+		59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBDiscoverViewController.swift; path = ../WBDiscoverViewController.swift; sourceTree = "<group>"; };
+		59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBProfileViewController.swift; path = ../WBProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		597905D31E4C0BB500264DD2 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		597905D41E4C0BB500264DD2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		597905D51E4C0BB500264DD2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */,
+				59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */,
+				59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		597905D61E4C0BB500264DD2 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		597905D71E4C0BB500264DD2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		59F387571E49C68C00CDF104 = {
 			isa = PBXGroup;
 			children = (
@@ -163,11 +205,11 @@
 		59F387951E49CB5C00CDF104 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				59F387981E49CB7600CDF104 /* Main */,
-				59F3879A1E49CB8A00CDF104 /* Home */,
-				59F3879B1E49CB9100CDF104 /* Message */,
-				59F3879C1E49CB9700CDF104 /* Discover */,
-				59F3879D1E49CB9E00CDF104 /* Profile */,
+				597905D51E4C0BB500264DD2 /* Main */,
+				597905D41E4C0BB500264DD2 /* Home */,
+				597905D61E4C0BB500264DD2 /* Message */,
+				597905D31E4C0BB500264DD2 /* Discover */,
+				597905D71E4C0BB500264DD2 /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,48 +226,6 @@
 			children = (
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		59F387981E49CB7600CDF104 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				59F3879E1E49CC0C00CDF104 /* WBMainViewController.swift */,
-				59F387A01E49CC4A00CDF104 /* WBNavigationViewController.swift */,
-				59F387A21E49CC6C00CDF104 /* WBBaseViewController.swift */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		59F3879A1E49CB8A00CDF104 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				59F387A41E49CCA300CDF104 /* WBHomeViewController.swift */,
-			);
-			name = Home;
-			sourceTree = "<group>";
-		};
-		59F3879B1E49CB9100CDF104 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				59F387A61E49CCB000CDF104 /* WBMessageViewController.swift */,
-			);
-			name = Message;
-			sourceTree = "<group>";
-		};
-		59F3879C1E49CB9700CDF104 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-				59F387A81E49CCBE00CDF104 /* WBDiscoverViewController.swift */,
-			);
-			name = Discover;
-			sourceTree = "<group>";
-		};
-		59F3879D1E49CB9E00CDF104 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				59F387AA1E49CCCF00CDF104 /* WBProfileViewController.swift */,
-			);
-			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -619,6 +619,7 @@
 				59F3878A1E49C68D00CDF104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59F3878B1E49C68D00CDF104 /* Build configuration list for PBXNativeTarget "SinaWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -627,6 +628,7 @@
 				59F3878D1E49C68D00CDF104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59F3878E1E49C68D00CDF104 /* Build configuration list for PBXNativeTarget "SinaWeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -635,6 +637,7 @@
 				59F387901E49C68D00CDF104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

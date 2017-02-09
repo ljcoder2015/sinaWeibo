@@ -31,7 +31,9 @@ class WBMainViewController: UITabBarController {
     // MARK: - 私有变量
     fileprivate lazy var composeButton: UIButton = {
         let button = UIButton(type: .custom)
-        button .setImage(#imageLiteral(resourceName: "ico"), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "ico"), for: .normal)
+        button.backgroundColor = UIColor.green
+//        button.contentVerticalAlignment = .top
         return button
     }()
     
@@ -59,7 +61,7 @@ extension WBMainViewController {
         
         tabBar.addSubview(composeButton)
         let width = tabBar.bounds.width/5-1
-        composeButton.frame = tabBar.bounds.insetBy(dx: width*2, dy: 0)
+        composeButton.frame = tabBar.bounds.insetBy(dx: width*2, dy: 5)
         
         composeButton.addTarget(self, action: #selector(compose), for: .touchUpInside)
         
