@@ -81,7 +81,7 @@ extension WBMainViewController {
         vc.tabBarItem.image = UIImage(named: imageName)
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .selected)
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 14)], for: .selected)
-        let navigationController = UINavigationController(rootViewController: vc)
+        let navigationController = WBNavigationViewController(rootViewController: vc)
         
         return navigationController
     }

@@ -13,7 +13,6 @@ class WBHomeViewController: WBBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +23,6 @@ class WBHomeViewController: WBBaseViewController {
     @objc fileprivate func showFriend () {
         print(#function)
         let friendVC = WBTestViewController()
-        friendVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(friendVC, animated: true)
     }
 
@@ -33,6 +31,7 @@ class WBHomeViewController: WBBaseViewController {
 extension WBHomeViewController {
     
     override func setupUI() {
+        super.setupUI()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "friend", style: .plain, target: self, action: #selector(showFriend))
     }
 }
