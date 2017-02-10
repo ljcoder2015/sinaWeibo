@@ -30,7 +30,7 @@ class WBTestViewController: WBBaseViewController {
 extension WBTestViewController {
     override func setupUI() {
         super.setupUI()
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "next", style: .plain, target: self, action: #selector(showNext))
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "next", target: self, action: #selector(showNext))
     }
 }

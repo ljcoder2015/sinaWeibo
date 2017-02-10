@@ -26,7 +26,8 @@ class WBNavigationViewController: UINavigationController {
         if childViewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
         }
+        
         super.pushViewController(viewController, animated: animated)
     }
-
+    
 }

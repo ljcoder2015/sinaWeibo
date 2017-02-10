@@ -17,16 +17,15 @@ extension UIBarButtonItem {
     ///   - fontSize: 字体大小
     ///   - target: target
     ///   - action: 点击事件
-    convenience init(title: String, fontSize: CGFloat = 20, target: Any?, action: Selector) {
+    convenience init(title: String, fontSize: CGFloat = 18, target: Any?, action: Selector) {
         
         let button: UIButton = UIButton(type: .custom)
         button.setTitle(title, for: .normal)
-        button.frame = CGRect(x: 0, y: 0, width: (button.titleLabel?.bounds.size.width) ?? 0, height: (button.titleLabel?.bounds.size.height) ?? 0)
         button.setTitleColor(UIColor.darkText, for: .normal)
         button.setTitleColor(UIColor.orange, for: .highlighted)
         button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
         button.addTarget(target, action: action, for: .touchUpInside)
-        
+        button.sizeToFit()
         self.init(customView: button)
     }
 }
