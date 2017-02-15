@@ -22,6 +22,8 @@ class WBBaseViewController: UIViewController {
         }
     }
     
+    var tableView: UITableView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,18 +57,30 @@ class WBBaseViewController: UIViewController {
 }
 
 extension WBBaseViewController {
+    
     func setupUI() {
         view.backgroundColor = UIColor.white
         
+        setupTableView()
+        setupNavigation()
+    }
+    
+    fileprivate func setupNavigation() {
         // 设置导航栏
         guard let navigation = navigationController else {
             return
         }
         
         navigation.navigationBar.barTintColor = UIColor.white
-    
+        
         if navigation.childViewControllers.count > 1 {
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: "back", target: self, action: #selector(goBack))
         }
+    }
+    
+    fileprivate func setupTableView() {
+        
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        view.addSubview(tableView!)
     }
 }

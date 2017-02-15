@@ -115,6 +115,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		596CC4EC1E53FB78004AA0AF /* main */ = {
+			isa = PBXGroup;
+			children = (
+				597905DF1E4C0C6500264DD2 /* WBMainViewController.swift */,
+				597905E01E4C0C6500264DD2 /* WBNavigationViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
 		597905D81E4C0C6500264DD2 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,9 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				597905DD1E4C0C6500264DD2 /* test */,
+				596CC4EC1E53FB78004AA0AF /* main */,
 				597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */,
-				597905DF1E4C0C6500264DD2 /* WBMainViewController.swift */,
-				597905E01E4C0C6500264DD2 /* WBNavigationViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
