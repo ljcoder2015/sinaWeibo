@@ -16,10 +16,18 @@ class WBMainViewController: UITabBarController {
         setupChildViewController()
         setupComposeButton()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - 屏幕方向
+    // 设置支持方向后，当前的控制器及自控制器都会遵守这个方向
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            return .portrait
+        }
     }
     
     // MARK: - 按钮事件
