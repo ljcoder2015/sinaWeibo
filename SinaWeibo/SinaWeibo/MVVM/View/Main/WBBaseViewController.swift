@@ -56,6 +56,8 @@ class WBBaseViewController: UIViewController {
     
 }
 
+
+// MARK: - 设置界面
 extension WBBaseViewController {
     
     func setupUI() {
@@ -81,6 +83,21 @@ extension WBBaseViewController {
     fileprivate func setupTableView() {
         
         tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView?.delegate = self
+        tableView?.dataSource = self
         view.addSubview(tableView!)
+    }
+}
+
+
+// MARK: - UITableViewDataSource, UITableViewDelegate
+extension WBBaseViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
