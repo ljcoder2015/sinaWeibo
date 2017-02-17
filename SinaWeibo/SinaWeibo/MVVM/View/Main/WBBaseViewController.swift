@@ -28,11 +28,16 @@ class WBBaseViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadData() {
+        
     }
     
     @objc fileprivate func goBack() {
@@ -85,6 +90,8 @@ extension WBBaseViewController {
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView?.delegate = self
         tableView?.dataSource = self
+        
+        tableView?.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 0, right: 0)
         view.addSubview(tableView!)
     }
 }
