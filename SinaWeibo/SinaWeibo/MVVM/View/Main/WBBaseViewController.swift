@@ -22,7 +22,9 @@ class WBBaseViewController: UIViewController {
         }
     }
     
+    // 属性
     var tableView: UITableView?
+    var refreshControl: UIRefreshControl?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +95,13 @@ extension WBBaseViewController {
         
         tableView?.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 0, right: 0)
         view.addSubview(tableView!)
+        
+        // 设置刷新
+        refreshControl = UIRefreshControl()
+        
+        tableView?.addSubview(refreshControl!)
+        
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
 }
 
