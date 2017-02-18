@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59780DEF1E5816A800A9C71F /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59780DEE1E5816A800A9C71F /* WBVisitorView.swift */; };
 		597905E51E4C0C6500264DD2 /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905D91E4C0C6500264DD2 /* WBDiscoverViewController.swift */; };
 		597905E61E4C0C6500264DD2 /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905DB1E4C0C6500264DD2 /* WBHomeViewController.swift */; };
 		597905E71E4C0C6500264DD2 /* WBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */; };
@@ -50,6 +51,7 @@
 		2E5C8E2F046B38F41EF86CC6 /* Pods-SinaWeiboTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeiboTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeiboTests/Pods-SinaWeiboTests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF261EC1F51315BAFAF4E7D /* Pods_SinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4419788E2F5F001D83FEF445 /* Pods-SinaWeiboUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeiboUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeiboUITests/Pods-SinaWeiboUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59780DEE1E5816A800A9C71F /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
 		597905D91E4C0C6500264DD2 /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
 		597905DB1E4C0C6500264DD2 /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
 		597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			name = main;
 			sourceTree = "<group>";
 		};
+		59780DED1E58168200A9C71F /* visitorView */ = {
+			isa = PBXGroup;
+			children = (
+				59780DEE1E5816A800A9C71F /* WBVisitorView.swift */,
+			);
+			name = visitorView;
+			sourceTree = "<group>";
+		};
 		597905D81E4C0C6500264DD2 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		597905DC1E4C0C6500264DD2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				59780DED1E58168200A9C71F /* visitorView */,
 				597905DD1E4C0C6500264DD2 /* test */,
 				596CC4EC1E53FB78004AA0AF /* main */,
 				597905DE1E4C0C6500264DD2 /* WBBaseViewController.swift */,
@@ -595,6 +606,7 @@
 			files = (
 				597905E71E4C0C6500264DD2 /* WBBaseViewController.swift in Sources */,
 				597905ED1E4C0C8500264DD2 /* WBTestViewController.swift in Sources */,
+				59780DEF1E5816A800A9C71F /* WBVisitorView.swift in Sources */,
 				597905F01E4C18C300264DD2 /* UIBarButtonItem+Extension.swift in Sources */,
 				597905EB1E4C0C6500264DD2 /* WBProfileViewController.swift in Sources */,
 				597905EA1E4C0C6500264DD2 /* WBMessageViewController.swift in Sources */,
