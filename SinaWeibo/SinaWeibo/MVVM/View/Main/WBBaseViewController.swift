@@ -25,6 +25,8 @@ class WBBaseViewController: UIViewController {
     // 属性
     var tableView: UITableView?
     var refreshControl: UIRefreshControl?
+    var isPull = false
+    var userLogin = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +41,7 @@ class WBBaseViewController: UIViewController {
     }
     
     func loadData() {
-        
+        refreshControl?.endRefreshing()
     }
     
     @objc fileprivate func goBack() {
@@ -70,8 +72,9 @@ extension WBBaseViewController {
     func setupUI() {
         view.backgroundColor = UIColor.white
         
-        setupTableView()
+        
         setupNavigation()
+        userLogin ? setupTableView() : setupVisitorView()
     }
     
     fileprivate func setupNavigation() {
@@ -103,6 +106,12 @@ extension WBBaseViewController {
         
         refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
+    
+    fileprivate func setupVisitorView() {
+        let visitorView = UIView(frame: view.bounds)
+        visitorView.backgroundColor = UIColor.blue
+        view.addSubview(visitorView)
+    }
 }
 
 
@@ -115,5 +124,23 @@ extension WBBaseViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let row = indexPath.row
+        let section = tableView.numberOfSections - 1
+        
+        if row < 0 || section < 0 {
+            return
+        }
+        
+        let count = tableView.numberOfRows(inSection: section)
+        
+        if row == (count - 1) && !isPull {
+            isPull = true
+            loadData()
+        }
+        
     }
 }

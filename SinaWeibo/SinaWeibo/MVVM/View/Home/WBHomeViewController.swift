@@ -30,10 +30,17 @@ class WBHomeViewController: WBBaseViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             
             for i in 0..<10 {
-                self.statusList.insert(i.description, at: 0)
+                if self.isPull {
+                    self.statusList.append("pull \(i)")
+                }
+                else {
+                    self.statusList.insert(i.description, at: 0)
+                }
+                
             }
             
             self.refreshControl?.endRefreshing()
+            self.isPull = false
             
             self.tableView?.reloadData()
         }
