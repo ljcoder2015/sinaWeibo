@@ -10,6 +10,19 @@ import UIKit
 
 class WBVisitorView: UIView {
 
+    var visitorInfo: [String: String]? {
+        didSet {
+            guard let imageName = visitorInfo?["imageName"] else {
+                return
+            }
+            if imageName == "" {
+                return
+            }
+            iconView.image = UIImage(named: imageName)
+        }
+    }
+    
+    // MARK: - 构造函数
     override init(frame: CGRect) {
         
         super.init(frame: frame)
@@ -21,12 +34,21 @@ class WBVisitorView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - 私有控件
+    fileprivate  lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "ico"))
+    
 }
 
 extension WBVisitorView {
     
     fileprivate func setupUI() {
         
+        addSubview(iconView)
+        
+        iconView.translatesAutoresizingMaskIntoConstraints = false
+        let centerX = NSLayoutConstraint(item: iconView, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1.0, constant: 0)
+        let centerY = NSLayoutConstraint(item: iconView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: 0)
+        addConstraints([centerX, centerY])
     }
     
 }

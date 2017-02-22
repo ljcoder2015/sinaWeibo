@@ -51,11 +51,21 @@ class WBMainViewController: UITabBarController {
 extension WBMainViewController {
     
     fileprivate func setupChildViewController() {
-        let array = [["clsName": "WBHomeViewController", "title": "首页", "imageName": "ico"],
-                     ["clsName": "WBMessageViewController", "title": "消息", "imageName": "ico"],
+        let array = [["clsName": "WBHomeViewController", "title": "首页", "imageName": "ico",
+                      "visitorInfo":["imageName":""]],
+                     
+                     ["clsName": "WBMessageViewController", "title": "消息", "imageName": "ico",
+                      "visitorInfo":["imageName":"ico"]],
+                     
                      ["clsName": "UIViewController"],
-                     ["clsName": "WBDiscoverViewController", "title": "发现", "imageName": "ico"],
-                     ["clsName": "WBProfileViewController", "title": "我", "imageName": "ico"]]
+                     
+                     ["clsName": "WBDiscoverViewController", "title": "发现", "imageName": "ico",
+                      "visitorInfo":["imageName":"launch"]],
+                     
+                     ["clsName": "WBProfileViewController", "title": "我", "imageName": "ico",
+                      "visitorInfo":["imageName":""]]
+                    ]
+        
         var chirld = [UIViewController]()
         for dic in array {
             
@@ -75,20 +85,26 @@ extension WBMainViewController {
         
     }
     
-    private func controller(dict: [String: String]) -> UIViewController {
-        guard let clsName = dict["clsName"],
-            let title = dict["title"],
-            let imageName = dict["imageName"],
-            let cls = NSClassFromString((Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "") + "." + clsName) as? UIViewController.Type
+    private func controller(dict: [String: Any]) -> UIViewController {
+        guard let clsName = dict["clsName"] as? String,
+            let title = dict["title"] as? String,
+            let imageName = dict["imageName"] as? String,
+            let cls = NSClassFromString((Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "") + "." + clsName) as? WBBaseViewController.Type,
+            let visitoreDict = dict["visitorInfo"] as? [String: String]
             else {
                 return UIViewController()
         }
         
         let vc = cls.init()
+        
         vc.title = title
+        // 设置访客视图
+        vc.visitorInfo = visitoreDict
+        
         vc.tabBarItem.image = UIImage(named: imageName)
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .selected)
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 14)], for: .selected)
+        
         let navigationController = WBNavigationViewController(rootViewController: vc)
         
         return navigationController

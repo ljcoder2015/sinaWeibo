@@ -27,6 +27,7 @@ class WBBaseViewController: UIViewController {
     var refreshControl: UIRefreshControl?
     var isPull = false
     var userLogin = false
+    var visitorInfo: [String: String]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,9 +109,10 @@ extension WBBaseViewController {
     }
     
     fileprivate func setupVisitorView() {
-        let visitorView = UIView(frame: view.bounds)
-        visitorView.backgroundColor = UIColor.blue
+        let visitorView = WBVisitorView(frame: view.bounds)
+        visitorView.backgroundColor = UIColor.lightGray
         view.addSubview(visitorView)
+        visitorView.visitorInfo = visitorInfo;
     }
 }
 
