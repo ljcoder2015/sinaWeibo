@@ -16,6 +16,7 @@ class WBVisitorView: UIView {
                 return
             }
             if imageName == "" {
+                startAnimation()
                 return
             }
             iconView.image = UIImage(named: imageName)
@@ -37,6 +38,15 @@ class WBVisitorView: UIView {
     // MARK: - 私有控件
     fileprivate  lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "ico"))
     
+    fileprivate func startAnimation() {
+        let animation = CABasicAnimation(keyPath: "transform.rotation")
+        
+        animation.toValue = 2 * M_PI
+        animation.repeatCount = MAXFLOAT
+        animation.duration = 15
+        animation.isRemovedOnCompletion = false
+        iconView.layer.add(animation, forKey: nil)
+    }
 }
 
 extension WBVisitorView {
