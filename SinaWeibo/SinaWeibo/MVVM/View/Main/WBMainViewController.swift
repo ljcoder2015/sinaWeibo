@@ -66,6 +66,9 @@ extension WBMainViewController {
                       "visitorInfo":["imageName":""]]
                     ]
         
+//        let jsonData = try! JSONSerialization.data(withJSONObject: array, options: [.prettyPrinted])
+//        let b = (jsonData as NSData).write(toFile: "/Users/ljcoder/Desktop/main.json", atomically: true)
+//        print(b)
         var chirld = [UIViewController]()
         for dic in array {
             
