@@ -51,26 +51,15 @@ class WBMainViewController: UITabBarController {
 extension WBMainViewController {
     
     fileprivate func setupChildViewController() {
-        let array = [["clsName": "WBHomeViewController", "title": "首页", "imageName": "ico",
-                      "visitorInfo":["imageName":""]],
-                     
-                     ["clsName": "WBMessageViewController", "title": "消息", "imageName": "ico",
-                      "visitorInfo":["imageName":"ico"]],
-                     
-                     ["clsName": "UIViewController"],
-                     
-                     ["clsName": "WBDiscoverViewController", "title": "发现", "imageName": "ico",
-                      "visitorInfo":["imageName":"launch"]],
-                     
-                     ["clsName": "WBProfileViewController", "title": "我", "imageName": "ico",
-                      "visitorInfo":["imageName":""]]
-                    ]
         
-//        let jsonData = try! JSONSerialization.data(withJSONObject: array, options: [.prettyPrinted])
-//        let b = (jsonData as NSData).write(toFile: "/Users/ljcoder/Desktop/main.json", atomically: true)
-//        print(b)
+        guard let path = Bundle.main.path(forResource: "main", ofType: "json"),
+            let data = NSData(contentsOfFile: path),
+            let array = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [[String: Any]] else {
+            return
+        }
+        
         var chirld = [UIViewController]()
-        for dic in array {
+        for dic in array! {
             
             chirld.append(controller(dict: dic))
         }
