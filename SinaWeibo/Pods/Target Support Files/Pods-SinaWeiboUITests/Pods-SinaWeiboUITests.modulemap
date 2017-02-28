@@ -1,0 +1,6 @@
+framework module Pods_SinaWeiboUITests {
+  umbrella header "Pods-SinaWeiboUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

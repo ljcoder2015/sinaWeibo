@@ -69,8 +69,8 @@ extension WBHomeViewController {
 // MARK: - setUI
 extension WBHomeViewController {
     
-    override func setupUI() {
-        super.setupUI()
+    override func setupTableView() {
+        super.setupTableView()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "friend", style: .plain, target: self, action: #selector(showFriend))
         
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)

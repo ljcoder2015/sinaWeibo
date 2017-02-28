@@ -70,7 +70,7 @@ class WBBaseViewController: UIViewController {
 // MARK: - 设置界面
 extension WBBaseViewController {
     
-    func setupUI() {
+    fileprivate func setupUI() {
         view.backgroundColor = UIColor.white
         
         
@@ -91,7 +91,7 @@ extension WBBaseViewController {
         }
     }
     
-    fileprivate func setupTableView() {
+    func setupTableView() {
         
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView?.delegate = self

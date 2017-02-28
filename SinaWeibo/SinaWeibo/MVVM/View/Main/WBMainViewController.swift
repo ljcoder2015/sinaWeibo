@@ -52,9 +52,17 @@ extension WBMainViewController {
     
     fileprivate func setupChildViewController() {
         
-        guard let path = Bundle.main.path(forResource: "main", ofType: "json"),
-            let data = NSData(contentsOfFile: path),
-            let array = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [[String: Any]] else {
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let jsonPath = (path as NSString).appendingPathComponent("main.json")
+        
+        var data = NSData(contentsOfFile: jsonPath)
+        
+        if data == nil {
+            let localPath = Bundle.main.path(forResource: "main", ofType: "json")
+            data = NSData(contentsOfFile: localPath!)
+        }
+        
+        guard let array = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: Any]] else {
             return
         }
         

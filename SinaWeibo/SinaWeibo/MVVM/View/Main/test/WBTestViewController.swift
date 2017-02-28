@@ -28,8 +28,8 @@ class WBTestViewController: WBBaseViewController {
 }
 
 extension WBTestViewController {
-    override func setupUI() {
-        super.setupUI()
+    override func setupTableView() {
+        super.setupTableView()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "next", target: self, action: #selector(showNext))
     }
